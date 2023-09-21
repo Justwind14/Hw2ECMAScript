@@ -20,7 +20,6 @@ class Book {
             throw new Error('для создания экземпляра класса третьим аргументом принимается конкретное положительное число');
         }      
         this.title = title;
-        this.author = author;
     }
 
     displayInfo() {
