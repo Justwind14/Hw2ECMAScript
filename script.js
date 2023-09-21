@@ -47,7 +47,7 @@ class Student {
         } else {
             throw new Error('первым аргументом принимается имя. Число не может быть именем');
         }    
-        if (typeof age === 'number' && Number.isFinite(pages) && pages > 0) {
+        if (typeof age === 'number' && Number.isInteger(age) && age > 0) {
             this.age = age;
         } else {
             throw new Error('для создания экземпляра класса вторым аргументом принимается конкретное положительное число');
@@ -60,5 +60,5 @@ class Student {
     }
 }
 
-const student = new Student("John Smith", 16, "10th grade");
+const student = new Student("John Smith", Infinity, "10th grade");
 student.displayInfo(); // "Name: John Smith, Age: 16, Grade: 10th grade"
