@@ -52,7 +52,7 @@ class Student {
         } else {
             throw new Error('для создания экземпляра класса вторым аргументом принимается конкретное положительное число');
         }
-        this.author = author;
+        this.grade = grade;
     }
 
     displayInfo() {
